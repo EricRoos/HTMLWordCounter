@@ -3,11 +3,13 @@ package Utils.HTMLWordCounter;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
+
+import Exceptions.SlidingWindowException;
 import Exceptions.TransitionException;
 
 public class Driver {
 
-	public static void main(String[] args) throws TransitionException, IOException {
+	public static void main(String[] args) throws TransitionException, IOException, SlidingWindowException {
 		FileInputStream is = new FileInputStream(new File("/Users/ericroos/Desktop/words.txt"));
 		HTMLWordCounter counter = new HTMLWordCounter();
 		

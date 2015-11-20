@@ -17,7 +17,7 @@ public class WordDetectedState extends State {
 			return new TagState(rdr);
 		}
 		if(ch == ' '){
-			return this;
+			return new MultiSpaceState(rdr);
 		}
 		return new CharacterState(rdr);
 	}
