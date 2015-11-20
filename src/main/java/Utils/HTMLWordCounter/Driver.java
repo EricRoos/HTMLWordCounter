@@ -10,7 +10,8 @@ import Exceptions.TransitionException;
 public class Driver {
 
 	public static void main(String[] args) throws TransitionException, IOException, SlidingWindowException {
-		FileInputStream is = new FileInputStream(new File("/Users/ericroos/Desktop/words.txt"));
+		System.out.println("Running Driver for word counter");
+	    FileInputStream is = new FileInputStream(new File("/Users/ericroos/Desktop/words.txt"));
 		HTMLWordCounter counter = new HTMLWordCounter();
 		
 
